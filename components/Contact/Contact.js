@@ -91,13 +91,13 @@ const Contact = () => {
           <h1 className="MainTitle">Neem contact op</h1>
         </div>
         {!send && (
-          <div className="bg-main flex flex-col justify-start items-center h-auto shadow-xl shadow-gray-300 rounded-xl p-4 my-5 mx-auto md:mx-0 max-w-[1132px] w-full">
+          <div className="bg-main flex flex-col justify-start items-center h-autorounded-xl p-4 my-5 mx-auto md:mx-0 max-w-[1132px] w-full">
             <h2 className="text-details text-2xl">Succes</h2>
             <p className="text-base pt-4">Bericht is verzonden</p>
           </div>
         )}
         <div className="flex flex-col md:flex-row w-full justify-center gap-8">
-          <div className="bg-main flex flex-col h-auto shadow-xl shadow-gray-300 rounded-xl gap-2 p-6 mx-auto md:mx-0 max-w-[700px] md:max-w-[400px] w-full">
+          <div className="bg-main flex flex-col h-auto rounded-xl gap-2 p-6 mx-auto md:mx-0 max-w-[700px] md:max-w-[400px] w-full">
             <div className="mx-auto my-0 hidden md:flex">
               <Image
                 src={"/contact.jpg"}
@@ -129,7 +129,7 @@ const Contact = () => {
 
           <form
             ref={form}
-            className="bg-main flex flex-col h-auto shadow-xl shadow-gray-300 rounded-xl gap-2 p-4 mx-auto md:mx-0 w-full text-base"
+            className="bg-main flex flex-col h-auto shadow-lg shadow-secondL rounded-xl gap-2 p-4 mx-auto md:mx-0 w-full text-base"
             onSubmit={handelSubmit}
           >
             <div className="flex flex-col sm:flex-row">
